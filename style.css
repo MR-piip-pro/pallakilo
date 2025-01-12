@@ -9,6 +9,7 @@
 body {
     background-color: #f4f4f4;
     color: #333;
+    font-size: 16px; /* خط أكبر على الشاشات الكبيرة */
 }
 
 /* العنوان الرئيسي */
@@ -32,6 +33,7 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* يسمح للعناصر بالانتقال إلى سطر جديد إذا لزم الأمر */
 }
 
 header nav ul li {
@@ -42,26 +44,6 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-}
-
-header .search-bar {
-    margin-top: 15px;
-}
-
-header .search-bar input {
-    padding: 8px;
-    width: 250px;
-    border: none;
-    border-radius: 5px;
-}
-
-header .search-bar button {
-    padding: 8px 12px;
-    border: none;
-    background-color: #28a745;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* قسم المقدمة */
@@ -83,6 +65,7 @@ header .search-bar button {
 /* أقسام الأكواد والملفات والمدونة */
 section {
     padding: 50px 0;
+    text-align: center;
 }
 
 h2 {
@@ -172,4 +155,59 @@ footer .social-links li a {
 
 footer .social-links li a:hover {
     color: #28a745;
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* تقليل حجم الخط على الشاشات الصغيرة */
+    }
+
+    header .logo {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        flex-direction: column; /* ترتيب العناصر عموديًا على الشاشات الصغيرة */
+    }
+
+    .intro h2 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    article {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .contact form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1.2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact form {
+        max-width: 100%;
+    }
+
+    .contact input, .contact textarea {
+        font-size: 0.9em;
+    }
+
+    .contact button {
+        font-size: 0.9em;
+    }
 }
