@@ -3,21 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <meta name="description" content="موقع احترافي لنشر الملفات والأكواد البرمجية">
+    <title>Professional Code Sharing</title>
+    <!-- روابط CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- العنوان الرئيسي -->
     <header>
-        <h1>Welcome to My Simple Website</h1>
+        <div class="container">
+            <h1 class="logo">CodeShare</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">الصفحة الرئيسية</a></li>
+                    <li><a href="#codes">الأكواد</a></li>
+                    <li><a href="#files">الملفات</a></li>
+                    <li><a href="#blog">المدونة</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <form class="search-bar">
+                <input type="text" placeholder="ابحث هنا...">
+                <button type="submit">بحث</button>
+            </form>
+        </div>
     </header>
-    <main>
-        <p>Hi there! This is a basic website created using HTML, CSS, and JavaScript.</p>
-        <button id="greetButton">Click Me</button>
-        <p id="greeting" class="hidden"></p>
-    </main>
+
+    <!-- قسم المقدمة -->
+    <section id="home" class="intro">
+        <div class="container">
+            <h2>مرحبًا بك في CodeShare</h2>
+            <p>شارك الأكواد والملفات البرمجية بسهولة، واستمتع بمقالات شيقة عن البرمجة.</p>
+        </div>
+    </section>
+
+    <!-- قسم الأكواد -->
+    <section id="codes" class="codes">
+        <div class="container">
+            <h2>الأكواد</h2>
+            <p>استعرض الأكواد البرمجية، حملها، أو أضف تعليقك.</p>
+            <div class="code-list">
+                <!-- أمثلة للأكواد -->
+                <article>
+                    <h3>مثال كود 1</h3>
+                    <p>وصف قصير للكود...</p>
+                    <a href="#">تحميل</a>
+                </article>
+                <article>
+                    <h3>مثال كود 2</h3>
+                    <p>وصف قصير للكود...</p>
+                    <a href="#">تحميل</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الملفات -->
+    <section id="files" class="files">
+        <div class="container">
+            <h2>الملفات</h2>
+            <p>اكتشف الملفات البرمجية التي تحتاجها.</p>
+            <div class="file-list">
+                <article>
+                    <h3>ملف 1</h3>
+                    <p>وصف قصير للملف...</p>
+                    <a href="#">تحميل</a>
+                </article>
+                <article>
+                    <h3>ملف 2</h3>
+                    <p>وصف قصير للملف...</p>
+                    <a href="#">تحميل</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- المدونة -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>المدونة</h2>
+            <p>تابع آخر المقالات حول البرمجة والتكنولوجيا.</p>
+            <article>
+                <h3>مقالة 1</h3>
+                <p>وصف قصير للمقالة...</p>
+                <a href="#">اقرأ المزيد</a>
+            </article>
+            <article>
+                <h3>مقالة 2</h3>
+                <p>وصف قصير للمقالة...</p>
+                <a href="#">اقرأ المزيد</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <form>
+                <input type="text" placeholder="اسمك" required>
+                <input type="email" placeholder="بريدك الإلكتروني" required>
+                <textarea placeholder="رسالتك" rows="5" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- التذييل -->
     <footer>
-        <p>&copy; 2025 My Simple Website</p>
+        <div class="container">
+            <p>© 2025 CodeShare. جميع الحقوق محفوظة.</p>
+            <ul class="social-links">
+                <li><a href="#">فيسبوك</a></li>
+                <li><a href="#">تويتر</a></li>
+                <li><a href="#">لينكدإن</a></li>
+            </ul>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
